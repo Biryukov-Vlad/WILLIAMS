@@ -1,0 +1,49 @@
+.link {
+  @include text-style(14, 17);
+  font-family: $Signika;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  transition-property: color;
+  transition-duration: $transition;
+}
+.button {
+  font-family: $Signika;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  user-select: none;
+  font-weight: 600;
+}
+.button-arrow {
+  position: relative;
+  padding: 3px 19px 2px 34px;
+  letter-spacing: -1px;
+  display: inline-block;
+
+  &::before {
+    @include sptite-manual_2x(1, 171);
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 8px;
+    width: 15px;
+    height: 12px;
+  }
+}
+.link_nav {
+  color: $white_pale;
+  &:hover {
+    color: $gold;
+  }
+}
+
+.title_h1 {
+  @include text-style(64, 60);
+  margin: 0px;
+  color: $white;
+  font-style: normal;
+  font-weight: bold;
+  font-family: $PlayfairDisplay;
+}

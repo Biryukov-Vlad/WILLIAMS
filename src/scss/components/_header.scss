@@ -1,1 +1,126 @@
- 
+.header {
+  padding: 60px 0;
+  @media (max-width: $tablet) {
+    padding: 18px 0;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    @media (max-width: $header-point) {
+      justify-content: space-between;
+    }
+  }
+  &__nav {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  &__hamburger {
+    margin: 0 0 0 auto;
+    display: none;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    &-line {
+      width: 30px;
+      height: 2px;
+      background: $gold;
+    }
+    @media (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    @media (max-width: $header-point) {
+      margin: 0px;
+    }
+  }
+  &__box-logo {
+    border-radius: 50%;
+    width: 80px;
+    margin-right: 25px;
+    @media (max-width: $header-point) {
+      margin: 0px;
+    }
+  }
+  &__logo {
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    @include sptite-manual_2x(1, 1);
+    @media (max-width: $header-point) {
+      width: 47px;
+      height: 47px;
+      background-size: 384px 176px;
+    }
+  }
+  &__link {
+    margin-right: 18px;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    @media (max-width: $big-desktop) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      @media (max-width: $header-point) {
+        margin-left: -20px;
+      }
+    }
+  }
+  &__phone {
+    @include text-style(16, 20);
+    text-transform: uppercase;
+    display: inline-block;
+    color: $gold;
+    font-weight: 600;
+    margin-left: 25px;
+    letter-spacing: 1px;
+    @media (max-width: $big-desktop) {
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
+    @media (max-width: $header-point) {
+      @include text-style(20, 26);
+      margin-bottom: 0px;
+      margin-left: -30px;
+    }
+
+    &:hover {
+      color: $gold;
+    }
+  }
+  &__button {
+    color: $black;
+    background: $gold;
+    transition-duration: $transition;
+    margin-left: 16px;
+    @media (max-width: $big-desktop) {
+      margin-left: 0;
+    }
+    &:hover {
+      color: $black;
+      background: $gold_muddy;
+      text-decoration: none;
+    }
+    &-desktop {
+      @media (max-width: $header-point) {
+        display: none;
+      }
+    }
+    &-mobile {
+      display: none;
+      margin-top: 15px;
+
+      @media (max-width: $header-point) {
+        display: block;
+
+        &::before {
+          left: 15%;
+        }
+      }
+    }
+  }
+}

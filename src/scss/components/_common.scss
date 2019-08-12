@@ -6,8 +6,29 @@ $white: #ffffff;
 $white_pale: rgba(255, 255, 255, 0.8);
 $white_muddy: rgba(255, 255, 255, 0.5);
 $gold: #ffe195;
+$gold_muddy: linear-gradient(0deg, rgba(14, 20, 32, 0.2), rgba(14, 20, 32, 0.2)), #ffe195;
 $black: #000000;
 $black_gold: #0e1420;
 
+// transition
+$transition: 0.5s;
 //background
 $bg_menu_mobile: rgba(1, 23, 45, 0.95);
+
+//point
+$big-desktop: 1180px;
+$desktop: 1023px;
+$tablet: 768px;
+
+$header-point: 456px;
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 20px;
+}
+.wrapper {
+  overflow: hidden;
+  background: $bg_menu_mobile;
+  height: 100%;
+}
