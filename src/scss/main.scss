@@ -9,8 +9,9 @@
 
 //Импорт стилей страниц
 @import "./pages/index";
-@import "./pages/contacts";
+@import "./pages/contacts";   
 
-//Импорт компонентов для страниц
+//Импорт компонентов для страниц 
 @import "./components/header";
 @import "./components/footer";
+@import "./components/menu-mobile";

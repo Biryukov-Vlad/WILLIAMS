@@ -7,6 +7,12 @@
   transition-property: color;
   transition-duration: $transition;
 }
+.phone {
+  font-style: $Signika;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-style: normal;
+}
 .button {
   font-family: $Signika;
   white-space: nowrap;
@@ -15,21 +21,25 @@
   font-style: normal;
   user-select: none;
   font-weight: 600;
+  &:hover {
+    text-decoration: none;
+  }
 }
 .button-arrow {
+  @include text-style(14, 17);
   position: relative;
-  padding: 3px 19px 2px 34px;
-  letter-spacing: -1px;
+  padding: 6px 18px 6px 36px;
+  letter-spacing: 0.1px;
   display: inline-block;
 
   &::before {
-    @include sptite-manual_2x(1, 171);
+    @include sprite-manual_2x(1, 173);
     position: absolute;
     content: "";
     left: 12px;
-    top: 8px;
+    top: 9px;
     width: 15px;
-    height: 12px;
+    height: 10px;
   }
 }
 .link_nav {

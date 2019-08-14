@@ -1,9 +1,9 @@
-@mixin sptite-manual($x, $y) {
+@mixin sprite-manual($x, $y) {
   background: url("./img/Sprite.png");
   background-repeat: no-repeat;
   background-position: (($x) * (-1px)) (($y) * (-1px));
 }
-@mixin sptite-manual_2x($x, $y) {
+@mixin sprite-manual_2x($x, $y) {
   background: url("./img/Sprite_2x.png");
   background-repeat: no-repeat;
   background-position: (($x) * (-1px)) (($y) * (-1px));

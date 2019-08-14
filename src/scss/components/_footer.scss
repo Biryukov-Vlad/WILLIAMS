@@ -1,0 +1,190 @@
+.footer {
+  &__block {
+    margin-top: 300px;
+    padding: 50px 0;
+  }
+  &__row {
+    display: flex;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+    &_nav {
+      justify-content: space-between;
+      padding-top: 10px;
+    }
+    &_logo {
+      justify-content: space-between;
+      padding-top: 10px;
+      @media (max-width: $tablet) {
+        padding-top: 20px;
+      }
+    }
+
+    &_rating {
+      align-items: center;
+      padding-top: 35px;
+      @media (max-width: $tablet) {
+        flex-direction: row;
+        padding-top: 20px;
+      }
+    }
+    &_address {
+      padding-top: 15px;
+      @media (max-width: $tablet) {
+        padding-top: 20px;
+      }
+    }
+    &_contacts {
+      justify-content: space-between;
+      padding-top: 15px;
+      @media (max-width: $tablet) {
+        padding-top: 20px;
+      }
+    }
+  }
+  &__social-links {
+    @media (max-width: $tablet) {
+      padding-top: 15px;
+    }
+  }
+  &__nav {
+    @media (max-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .link_nav {
+      margin-right: 24px;
+      padding: 5px;
+      @media (max-width: $tablet) {
+        display: inline-block;
+        white-space: nowrap;
+        text-align: left;
+        width: 27%;
+        margin-right: 0px;
+      }
+      @media (max-width: 520px) {
+        width: 50%;
+      }
+    }
+  }
+  &__button {
+    color: $black;
+    background: $gold;
+    transition: $transition;
+    letter-spacing: 1px;
+    @media (max-width: $tablet) {
+      margin-top: 20;
+    }
+    &:hover {
+      color: $black;
+      background: $gold_muddy;
+    }
+  }
+  &__box-logo {
+    display: flex;
+  }
+  &__logo {
+    transition: $transition;
+    &:hover {
+      opacity: 0.7;
+    }
+    &-BBB {
+      width: 170px;
+      height: 41px;
+      background: url("./img/BBB-logo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &-NAPP {
+      margin-left: 30px;
+      width: 80px;
+      height: 43px;
+      background: url("./img/NAPP-logo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+  }
+  &__social-link {
+    margin-left: 11px;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    transition: $transition;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:nth-child(1) {
+      @include sprite-manual_2x(1, 184);
+    }
+    &:nth-child(2) {
+      @include sprite-manual_2x(33, 184);
+    }
+    &:nth-child(3) {
+      @include sprite-manual_2x(65, 184);
+    }
+    &:nth-child(4) {
+      @include sprite-manual_2x(97, 184);
+    }
+  }
+  &__box-stars {
+    display: flex;
+    margin-left: 10px;
+  }
+  // звёзды рейтинга
+  &__star {
+    cursor: pointer;
+    height: 17px;
+    width: 16px;
+    margin-right: 4px;
+
+    @include sprite-manual_2x(135, 165);
+    //!!JS
+    &-activ-js {
+      @include sprite-manual_2x(31, 165);
+    }
+  }
+  &__star_1 {
+    &:focus {
+      @include sprite-manual_2x(31, 165);
+    }
+  }
+  &__text {
+    @include text_style(14, 10);
+    font-weight: 300;
+    font-family: $Signika;
+    margin: 0px;
+    letter-spacing: 0.3px;
+
+    &_rating {
+      color: $white;
+    }
+    &_address {
+      color: $white_muddy;
+      @media (max-width: $tablet) {
+        line-height: 20px;
+      }
+    }
+    &_contacts {
+      color: $white_muddy;
+      @media (max-width: $tablet) {
+        padding-top: 20px;
+      }
+    }
+  }
+  &__phone {
+    @include text_style(14, 10);
+    font-family: $Signika;
+    color: $gold;
+    font-weight: 300;
+    transition: $transition;
+    letter-spacing: 0.3px;
+
+    &:hover {
+      color: $gold_muddy;
+    }
+  }
+}

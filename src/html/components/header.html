@@ -5,19 +5,15 @@
         <a href="#" class="header__box-logo">
           <div class="header__logo"></div>
         </a>
-        <nav class="header__nav">
-          <a class="header__link link link_nav" href="#">Who We Are</a>
-          <a class="header__link link link_nav" href="#">What We Do</a>
-          <a class="header__link link link_nav" href="#">Patenting Process</a>
-          <a class="header__link link link_nav" href="#">FAQ</a>
-          <a class="header__link link link_nav" href="#">Fee Structure</a>
-          <a class="header__link link link_nav" href="#">Contact</a>
-          <a class="header__link link link_nav" href="#">Blog</a>
-        </nav>
+
+        @@include('./../components/navigation.html',{
+        "class":"header"
+        })
 
         <div class="header__contacts">
           <a class="header__phone" href="tel:1-888-357-1068">1-888-357-1068</a>
-          <div class="header__wrap-btn"> <a class="header__button header__button-desktop button button-arrow" href="#">Submit Your Idea Now</a>
+          <div class="header__wrap-btn"> <a class="header__button header__button-desktop button button-arrow"
+              href="#">Submit Your Idea Now</a>
           </div>
         </div>
         <div class="header__hamburger">

@@ -1,0 +1,130 @@
+var hamburger = document.getElementsByClassName("header__hamburger")[0];
+var menuModal = document.getElementsByClassName("menu-mobile")[0];
+
+hamburger.onclick = function () {
+    if (!!menuModal.classList.contains("menu-mobile-hidden-js")) {
+        menuModal.classList.remove("menu-mobile-hidden-js");
+        menuModal.classList.add("menu-mobile-open-js");
+        // document.body.style.overflow = "hidden";
+    }
+    else if (!menuModal.classList.contains("menu-mobile-hidden-js")) {
+        menuModal.classList.add("menu-mobile-hidden-js");
+        menuModal.classList.remove("menu-mobile-open-js");
+        // document.body.style.overflow = "auto";
+    }
+}
+
+
+var star;
+var quantity = 0;
+var checkClickStars = false;
+var star_1 = document.getElementsByClassName("footer__star")[0];
+var star_2 = document.getElementsByClassName("footer__star")[1];
+var star_3 = document.getElementsByClassName("footer__star")[2];
+var star_4 = document.getElementsByClassName("footer__star")[3];
+var star_5 = document.getElementsByClassName("footer__star")[4];
+
+
+
+star_1.onclick = function () {
+    if (!checkClickStars) {
+        quantity = 1;
+        checkClickStars = true;
+        ratingCompany(quantity);
+    }
+}
+star_2.onclick = function () {
+    if (!checkClickStars) {
+        quantity = 2;
+        checkClickStars = true;
+        ratingCompany(quantity);
+    }
+}
+star_3.onclick = function () {
+    if (!checkClickStars) {
+        quantity = 3;
+        checkClickStars = true;
+        ratingCompany(quantity);
+    }
+}
+star_4.onclick = function () {
+    if (!checkClickStars) {
+        quantity = 4;
+        checkClickStars = true;
+        ratingCompany(quantity);
+    }
+}
+star_5.onclick = function () {
+    if (!checkClickStars) {
+        quantity = 5;
+        checkClickStars = true;
+        ratingCompany(quantity);
+    }
+}
+
+function ratingCompany(quantity) {
+    for (var i = 0; i < quantity; i++) {
+        star = document.getElementsByClassName("footer__star")[i];
+        if (!star.classList.contains("footer__star-activ-js")) {
+            star.classList.add("footer__star-activ-js");
+        }
+    }
+}
+
+star_1.onmouseover = function () {
+    if (!checkClickStars) {
+        quantity = 1;
+        removeStar()
+        targetStar(quantity)
+    }
+}
+star_2.onmouseover = function () {
+    if (!checkClickStars) {
+        quantity = 2;
+        removeStar()
+        targetStar(quantity)
+    }
+}
+star_3.onmouseover = function () {
+    if (!checkClickStars) {
+        quantity = 3;
+        removeStar()
+        targetStar(quantity)
+    }
+}
+star_4.onmouseover = function () {
+    if (!checkClickStars) {
+        quantity = 4;
+        removeStar()
+        targetStar(quantity)
+    }
+}
+star_5.onmouseover = function () {
+    if (!checkClickStars) {
+        quantity = 5;
+        removeStar()
+        targetStar(quantity)
+    }
+}
+
+function targetStar() {
+    for (var i = 0; i < quantity; i++) {
+        star = document.getElementsByClassName("footer__star")[i];
+        if (!star.classList.contains("footer__star-activ-js")) {
+            star.classList.add("footer__star-activ-js");
+        }
+    }
+}
+
+function removeStar() {
+    for (var i = 0; i < 5; i++) {
+        star = document.getElementsByClassName("footer__star")[i];
+        if (!!star.classList.contains("footer__star-activ-js")) {
+            star.classList.remove("footer__star-activ-js");
+        }
+    }
+}
+
+
+
+

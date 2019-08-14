@@ -20,6 +20,7 @@
     display: none;
     width: 30px;
     height: 24px;
+    z-index: 11;
     cursor: pointer;
     &-line {
       width: 30px;
@@ -47,7 +48,7 @@
     width: 80px;
     height: 80px;
     box-sizing: border-box;
-    @include sptite-manual_2x(1, 1);
+    @include sprite-manual_2x(1, 1);
     @media (max-width: $header-point) {
       width: 47px;
       height: 47px;
@@ -65,9 +66,9 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      @media (max-width: $header-point) {
-        margin-left: -20px;
-      }
+    }
+    @media (max-width: $header-point) {
+      margin-left: -20px;
     }
   }
   &__phone {
@@ -78,6 +79,7 @@
     font-weight: 600;
     margin-left: 25px;
     letter-spacing: 1px;
+    transition: $transition;
     @media (max-width: $big-desktop) {
       margin-bottom: 10px;
       margin-left: 0;
@@ -89,21 +91,21 @@
     }
 
     &:hover {
-      color: $gold;
+      color: $gold_muddy
     }
   }
   &__button {
     color: $black;
     background: $gold;
-    transition-duration: $transition;
-    margin-left: 16px;
-    @media (max-width: $big-desktop) {
-      margin-left: 0;
-    }
+    margin-left: 17px;
+    transition: $transition;
     &:hover {
       color: $black;
       background: $gold_muddy;
       text-decoration: none;
+    }
+    @media (max-width: $big-desktop) {
+      margin-left: 0;
     }
     &-desktop {
       @media (max-width: $header-point) {

@@ -1,0 +1,75 @@
+.open-menu {
+  overflow: hidden;
+}
+.menu-mobile {
+  &-hidden-js {
+    left: -100%;
+  }
+  &-open-js {
+    left: 0px;
+  }
+  position: absolute;
+  transition: $transition;
+  background: $bg_menu_mobile;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  &__block {
+    padding: 23px 0;
+  }
+  &__nav {
+    padding: 35px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .link {
+      margin-bottom: 18px;
+    }
+  }
+  &__box {
+    &-top {
+      display: flex;
+      align-items: center;
+    }
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 0 0 10px;
+    }
+  }
+  &__logo {
+    @include sprite-manual_2x(1, 1);
+    background-size: 416px 186px;
+    width: 51px;
+    height: 51px;
+  }
+  &__phone {
+    @include text-style(16, 20);
+    color: $gold;
+    font-weight: 600;
+    font-family: $Signika;
+    margin-left: 27px;
+    transition: $transition;
+    &:hover {
+      color: $gold;
+      opacity: 0.8;
+    }
+  }
+  &__button {
+    color: $gold;
+    background: $black_gold;
+    transition: $transition;
+    margin-bottom: 15px;
+    &:hover {
+      color: $black_gold;
+      background: $gold;
+    }
+    &::before {
+      @include sprite-manual_2x(1, 162);
+    }
+    &:hover::before {
+      @include sprite-manual_2x(1, 173);
+    }
+  }
+}
