@@ -1,4 +1,7 @@
 .footer {
+  background: url("./img/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   &__block {
     margin-top: 300px;
     padding: 50px 0;
@@ -105,34 +108,14 @@
     }
   }
 
-  &__social-links {
-    display: flex;
-  }
   &__social-link {
     margin-left: 11px;
-    width: 31px;
-    height: 31px;
-    border-radius: 50%;
-    transition: $transition;
-    &:hover {
-      opacity: 0.7;
-    }
-    &:nth-child(1) {
-      @include sprite-manual_2x(1, 184);
-    }
-    &:nth-child(2) {
-      @include sprite-manual_2x(33, 184);
-    }
-    &:nth-child(3) {
-      @include sprite-manual_2x(65, 184);
-    }
-    &:nth-child(4) {
-      @include sprite-manual_2x(97, 184);
-    }
+    
   }
   &__box-stars {
     display: flex;
     margin-left: 10px;
+    
   }
   // звёзды рейтинга
   &__star {

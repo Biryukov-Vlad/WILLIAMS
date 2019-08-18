@@ -13,7 +13,38 @@
   <div class="wrapper">
     @@include('./../components/menu-mobile.html')
     @@include('./../components/header.html')
+
+    <section class="section-top section-top_main">
+      <div class="container">
+        @@include('./../components/we-win.html',{
+        "title":"We Win Patents",
+        "text":"The Congress shall have the power... to promote the progress of science and useful arts, by securing for limited times to authors and inventors the exclusive right to their  respective writings and discoveries.” US Constitution § 8, Clause 8"
+       }) 
+        @@include('./../components/anchor.html',{
+        "class":"section-top",
+        "link":"#footer"
+        })  
+        @@include('./../components/social-links.html',{
+        "class":"section-top"
+        })
+      </div>
+    </section>
+
+    <main class="main-content-site"> 
+      <div class="container">
+          @@include('./../components/slides-what-our.html')
+      </div>
+    </main>
+
     @@include('./../components/footer.html')
+  </div>
+
+
+
+
+
+
+
   </div>
 </body>
 <script src="script.js"></script>

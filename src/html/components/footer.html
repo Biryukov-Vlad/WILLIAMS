@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="container">
+  <div class="container" id="footer">
     <div class="footer__block">
       <div class="footer__row_nav footer__row">
         @@include('./../components/navigation.html',{
@@ -15,12 +15,10 @@
           <a href="#" class="footer__logo-NAPP footer__logo"></a>
         </div>
 
-        <div class="footer__social-links">
-          <a href="#" class="footer__social-link"></a>
-          <a href="#" class="footer__social-link"></a>
-          <a href="#" class="footer__social-link"></a>
-          <a href="#" class="footer__social-link"></a>
-        </div>
+        @@include('./../components/social-links.html',{
+        "class":"footer"
+        })
+
       </div>
 
       <div class="footer__row_rating footer__row">

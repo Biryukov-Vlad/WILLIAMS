@@ -1,28 +1,35 @@
-var hamburger = document.getElementsByClassName("header__hamburger")[0];
-var menuModal = document.getElementsByClassName("menu-mobile")[0];
+let anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        const blockID = anchor.getAttribute('href')
+
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
+
+var hamburger = document.getElementsByClassName("header__hamburger")[0],
+    menuModal = document.getElementsByClassName("menu-mobile")[0];
 
 hamburger.onclick = function () {
-    if (!!menuModal.classList.contains("menu-mobile-hidden-js")) {
-        menuModal.classList.remove("menu-mobile-hidden-js");
-        menuModal.classList.add("menu-mobile-open-js");
-        // document.body.style.overflow = "hidden";
-    }
-    else if (!menuModal.classList.contains("menu-mobile-hidden-js")) {
-        menuModal.classList.add("menu-mobile-hidden-js");
-        menuModal.classList.remove("menu-mobile-open-js");
-        // document.body.style.overflow = "auto";
-    }
+    menuModal.classList.toggle("menu-mobile-open-js");
+    document.body.classList.toggle("open-menu")
 }
 
 
-var star;
-var quantity = 0;
-var checkClickStars = false;
-var star_1 = document.getElementsByClassName("footer__star")[0];
-var star_2 = document.getElementsByClassName("footer__star")[1];
-var star_3 = document.getElementsByClassName("footer__star")[2];
-var star_4 = document.getElementsByClassName("footer__star")[3];
-var star_5 = document.getElementsByClassName("footer__star")[4];
+var star,
+    quantity = 0,
+    checkClickStars = false,
+    star_1 = document.getElementsByClassName("footer__star")[0],
+    star_2 = document.getElementsByClassName("footer__star")[1],
+    star_3 = document.getElementsByClassName("footer__star")[2],
+    star_4 = document.getElementsByClassName("footer__star")[3],
+    star_5 = document.getElementsByClassName("footer__star")[4];
 
 
 

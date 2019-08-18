@@ -50,10 +50,26 @@
 }
 
 .title_h1 {
-  @include text-style(64, 60);
   margin: 0px;
   color: $white;
   font-style: normal;
   font-weight: bold;
   font-family: $PlayfairDisplay;
+}
+.title_h2 {
+  @include text-style(32, 43);
+  margin: 0px;
+  color: $white;
+  font-style: normal;
+  font-weight: bold;
+  font-family: $PlayfairDisplay;
+}
+.text_s {
+  margin: 0px;
+  font-family: $Signika;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: $white_pale;
 }

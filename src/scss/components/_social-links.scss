@@ -1,0 +1,24 @@
+.social-links {
+  display: flex;
+}
+.social-link {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  transition: $transition;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:nth-child(1) {
+    @include sprite-manual_2x(1, 184);
+  }
+  &:nth-child(2) {
+    @include sprite-manual_2x(33, 184);
+  }
+  &:nth-child(3) {
+    @include sprite-manual_2x(65, 184);
+  }
+  &:nth-child(4) {
+    @include sprite-manual_2x(97, 184);
+  }
+}
