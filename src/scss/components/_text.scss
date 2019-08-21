@@ -20,10 +20,18 @@
   text-transform: uppercase;
   font-style: normal;
   user-select: none;
-  font-weight: 600;
+  font-weight: normal;
   &:hover {
     text-decoration: none;
   }
+}
+.button_wide {
+  @include text-style(14, 17); 
+  color: $white_muddy;
+  font-weight: normal;
+  width: 100%;
+  background: #2d3a52;
+  padding: 17px 0;
 }
 .button-arrow {
   @include text-style(14, 17);
@@ -65,11 +73,10 @@
   font-family: $PlayfairDisplay;
 }
 .text_s {
+  @include text-style(16, 26);
   margin: 0px;
   font-family: $Signika;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
   color: $white_pale;
 }
