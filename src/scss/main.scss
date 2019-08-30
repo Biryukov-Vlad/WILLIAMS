@@ -10,11 +10,13 @@
 
 //Импорт стилей страниц
 @import "./pages/index";
+@import "./pages/who-we-are";
 
-//Импорт компонентов для страниц
+//Импорт компонентов для страниц   
 @import "./components/header";
 @import "./components/footer";
 @import "./components/anchor";
+@import "./components/top-site";
 @import "./components/social-links";
 @import "./components/menu-mobile";
 @import "./components/we-win";
@@ -24,3 +26,4 @@
 @import "./components/call-us-today";
 @import "./components/won-patents";
 @import "./components/blog-news";
+

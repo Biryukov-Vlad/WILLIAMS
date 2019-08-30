@@ -1,5 +1,5 @@
 .header {
-  z-index: 2;
+  z-index: 5;
   position: absolute;
   top: 0px;
   width: 100%;
@@ -20,11 +20,12 @@
     }
   }
   &__hamburger {
+    z-index: 50; 
+    position: relative;
     margin: 0 0 0 auto;
     display: none;
     width: 30px;
     height: 24px;
-    z-index: 11;
     cursor: pointer;
     &-line {
       width: 30px;
@@ -44,6 +45,7 @@
     border-radius: 50%;
     width: 80px;
     margin-right: 25px;
+    z-index: 10;
     @media (max-width: $header-point) {
       margin: 0px;
     }

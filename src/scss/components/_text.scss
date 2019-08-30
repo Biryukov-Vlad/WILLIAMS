@@ -71,6 +71,23 @@
     height: 10px;
   }
 }
+.button-arrow_black {
+  @include text-style(14, 17);
+  position: relative;
+  padding: 6px 18px 6px 36px;
+  letter-spacing: 0.1px;
+  display: inline-block;
+
+  &::before {
+    @include sprite-manual_2x(1, 162); 
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 9px;
+    width: 15px;
+    height: 10px;
+  }
+}
 .link_nav {
   color: $white_pale;
   &:hover {

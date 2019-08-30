@@ -1,0 +1,60 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+  <title>Who We Are</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('./../components/menu-mobile.html')
+    @@include('./../components/header.html')
+
+    <section class="section-top section-top_who-we-are">
+      <div class="container">
+        <div class="top-site">
+          <div class="top-site__block">
+            <div class="top-site__content">
+              <a href="#" class="top-site__link"><span class="top-site__link_gold">Home /</span> Who We Are</a>
+              <h1 class="top-site__title title_h1">Who We Are</h1>
+              <p class="top-site__text text_s">Over the last five years, practitioners at Williams Intellectual Property
+                have
+                written more than 500 utility patent applications for clients across the world.</p>
+              <div class="top-site__wrap-btn"> <a href="#" class="top-site__button button button-arrow_black">CONTACT
+                  US</a></div>
+            </div>
+          </div>
+        </div>
+
+
+        @@include('./../components/anchor.html',{
+        "class":"section-top",
+        "link":"#footer"
+        })
+
+      </div>
+    </section>
+
+    <main class="main-content-site">
+      @@include('./../components/what-we-do.html')
+      @@include('./../components/won-patents.html')
+      @@include('./../components/call-us-today.html')
+      @@include('./../components/slide-reviews.html')
+      @@include('./../components/blog-news.html')
+
+    </main>
+
+    @@include('./../components/footer.html')
+  </div>
+
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+<script src="script.js"></script>
+
+</html>
