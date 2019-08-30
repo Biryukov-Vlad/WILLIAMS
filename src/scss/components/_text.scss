@@ -10,8 +10,14 @@
 .phone {
   font-style: $Signika;
   letter-spacing: 1px;
+  transition: 0.3s;
   text-transform: uppercase;
   font-style: normal;
+  color: $gold;
+  &:hover {
+    text-decoration: none;
+    color: $gold_muddy;
+  }
 }
 .button {
   font-family: $Signika;
@@ -26,12 +32,27 @@
   }
 }
 .button_wide {
-  @include text-style(14, 17); 
+  @include text-style(14, 17);
+  display: block;
+  letter-spacing: 1px;
   color: $white_muddy;
   font-weight: normal;
   width: 100%;
   background: #2d3a52;
   padding: 17px 0;
+  transition: 0.3s;
+  @media (max-width: $tablet) {
+    color: $black;
+    background: $gold;
+  }
+  &:hover {
+    background: $gold;
+    color: $black;
+    @media (max-width: $tablet) {
+      background: #2d3a52;
+      color: $gold;
+    }
+  }
 }
 .button-arrow {
   @include text-style(14, 17);
@@ -58,6 +79,7 @@
 }
 
 .title_h1 {
+  @include text-style(56, 52);
   margin: 0px;
   color: $white;
   font-style: normal;
@@ -71,6 +93,9 @@
   font-style: normal;
   font-weight: bold;
   font-family: $PlayfairDisplay;
+  @media (max-width: $tablet) {
+    @include text-style(26, 35);
+  }
 }
 .text_s {
   @include text-style(16, 26);

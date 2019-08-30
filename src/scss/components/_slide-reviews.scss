@@ -1,0 +1,117 @@
+.slide-reviews {
+  margin-bottom: -100px;
+  @media (max-width: $desktop) {
+    margin-bottom: -10px;
+  }
+
+  &__block {
+    padding: 100px 0 60px 0;
+  }
+  &__name {
+    @include text-style(16, 24);
+    color: $white_pale;
+    text-transform: uppercase;
+  }
+  &__box {
+    width: 30%;
+    padding-right: 20px;
+    @media (max-width: $desktop) {
+      padding-right: 0;
+    }
+    @media (max-width: $tablet) {
+      width: 90%;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+    &_desktop {
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    &_tablet-desktop {
+      @media (max-width: $desktop) {
+        display: none;
+      }
+    }
+  }
+  &__wrap-box {
+    display: flex;
+    justify-content: center;
+    @media (max-width: $desktop) {
+      justify-content: space-around;
+    }
+  }
+
+  .swiper-slide_desktop {
+    display: none;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: $desktop) {
+      height: 200px;
+    }
+    @media (max-width: $tablet) {
+      height: 170px;
+    }
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+  }
+  .swiper-button-next {
+    @include sprite-manual_2x(16, 157);
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    height: 26px;
+    width: 14px;
+    top: 80px;
+    &:hover {
+      opacity: 0.5;
+    }
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+  .swiper-button-prev {
+    @include sprite-manual_2x(16, 157);
+    transform: scaleX(-1);
+    user-select: none;
+    height: 26px;
+    width: 14px;
+    top: 80px;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    &:hover {
+      opacity: 0.5;
+    }
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    border-radius: 0;
+    width: 25px;
+    height: 2px;
+    background: $gold;
+  }
+  .swiper-pagination {
+    position: static;
+    margin-top: -20px;
+  }
+  .swiper-control-block {
+    margin-top: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
+  }
+}

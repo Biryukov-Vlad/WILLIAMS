@@ -1,6 +1,7 @@
 //Импорт общих стилей
 @import "./components/common";
 @import "./components/mixins";
+@import "./components/swiper";
 @import "./components/text";
 
 //Импорт шрифтов
@@ -17,5 +18,9 @@
 @import "./components/social-links";
 @import "./components/menu-mobile";
 @import "./components/we-win";
-@import "./components/slides-what-our";
+@import "./components/slide-reviews";
 @import "./components/what-we-do";
+@import "./components/thank-you";
+@import "./components/call-us-today";
+@import "./components/won-patents";
+@import "./components/blog-news";

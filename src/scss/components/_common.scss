@@ -9,12 +9,10 @@ $gold: #ffe195;
 $gold_muddy: #cfb87e;
 $black: #000000;
 $black_gold: #0e1420;
-
-// transition
 $transition: 0.5s;
 //background
 $bg_menu_mobile: rgba(1, 23, 45, 0.95);
-
+$bg_card: rgba(27, 49, 75, 0.75);
 //point
 $big-desktop: 1180px;
 $desktop: 1023px;
@@ -29,6 +27,13 @@ $header-point: 456px;
 }
 .wrapper {
   overflow: hidden;
-  background: $bg_menu_mobile;
-  height: 9000px;
+  background: #050713;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }

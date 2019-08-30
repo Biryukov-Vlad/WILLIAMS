@@ -16,7 +16,7 @@
     align-items: center;
     transition: 0.3s;
     padding: 50px 0 20px 0;
-    background: rgba(27, 49, 75, 0.75);
+    background: $bg_card;
     min-height: 380px;
     @media (max-width: $big-desktop) {
       padding: 30px 0 0 0;
@@ -42,6 +42,10 @@
     &:hover {
       text-decoration: none;
       opacity: 1;
+    }
+    &:hover .what-we-do__button{
+      background: $gold;
+      color: $black;
     }
     &:nth-child(1) {
       grid-column: 1/5;
@@ -138,6 +142,7 @@
     }
   }
   &__button {
+    transition: 0.3s;
     margin-top: 10px;
     @media (max-width: $tablet) {
       display: none;

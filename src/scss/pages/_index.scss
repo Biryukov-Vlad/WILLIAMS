@@ -1,14 +1,36 @@
+.section-top__bg-stars {
+  position: fixed;
+  background: url("./img/bg-stars-actiove.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  z-index: 0;
+  width: 100%;
+}
 .section-top_main {
-  padding-top: 290px;
-  @media (max-width: $tablet){
+  position: relative;
+  z-index: 3;
+  padding: 300px 0 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 212, 255, 0) 40%),
+    url("./img/bg-mountains.png");
+  background-repeat: no-repeat;
+  background-position-y: 200px;
+  background-size: cover;
+  @media (max-width: $tablet) {
     padding-top: 150px;
   }
+
   .we-win__title {
     @include text-style(64, 60);
     @media (max-width: $tablet) {
       @include text-style(36, 34);
     }
   }
+}
+.main-content-site {
+  position: relative;
+  z-index: 20;
+  background: #050713;
 }
 .section-top {
   &__social-link {
@@ -22,7 +44,7 @@
   }
   &_anchor {
     margin: 195px auto 0 auto;
-    @media (max-width: $tablet){
+    @media (max-width: $tablet) {
       margin: 20px auto 0 auto;
     }
   }

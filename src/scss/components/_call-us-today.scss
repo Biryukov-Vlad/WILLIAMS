@@ -1,0 +1,70 @@
+.call-us-today {
+  padding: 50px 0 50px;
+  &__content {
+    padding: 90px 0 20px;
+    background: $bg_card;
+    @media (max-width: $tablet) {
+      padding: 38px 0 20px 0;
+    }
+  }
+  &__content-inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0 20px;
+    }
+  }
+  &__box-contacts {
+    grid-column: 2/7;
+    @media (max-width: $tablet) {
+      grid-column: 1/5;
+    }
+  }
+  &__box-desc {
+    grid-column: 7/11;
+    padding-top: 10px;
+    @media (max-width: $tablet) {
+      grid-column: 1/5;
+    }
+  }
+  &__title {
+    @media (max-width: 945px) {
+      @include text-style(45, 43);
+    }
+    @media (max-width: $tablet) {
+      @include text-style(36, 34);
+    }
+  }
+  &__text_consultation {
+    padding-top: 10px;
+    @media (max-width: $tablet) {
+      @include text-style(16, 26);
+    }
+  }
+  &__phone {
+    @include text-style(32, 43);
+    font-family: $PlayfairDisplay;
+    display: inline-block;
+    padding-top: 25px;
+    font-weight: 700;
+    &_desktop {
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    &_mobile {
+      display: none;
+      @media (max-width: $tablet) {
+        display: inline-block;
+      }
+    }
+  }
+  &__button {
+    margin-top: 64px;
+    @media (max-width: $tablet) {
+      margin-top: 15px;
+    }
+  }
+}
