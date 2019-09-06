@@ -1,10 +1,9 @@
 .footer {
-  background:linear-gradient(20.85deg,rgba(0,79,173,.232) 6.96%,rgba(0,79,173,0) 42.12%) center/cover no-repeat, url("./img/footer_bg.png") ;
+  background: url("./img/footer_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  &-wrap {
-    background: black;
+  &-wrap { 
     position: relative;
   }
   &__block {

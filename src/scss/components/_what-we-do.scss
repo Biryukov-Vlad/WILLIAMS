@@ -1,4 +1,8 @@
 .what-we-do {
+  padding: 80px 0 50px 0;
+  @media (max-width: $tablet) {
+    padding: 30px 0 30px 0;
+  }
   &__title {
     margin-bottom: 35px;
   }
@@ -6,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
-    @media (max-width: $tablet){
+    @media (max-width: $tablet) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -28,9 +32,9 @@
       justify-content: center;
     }
     @media (max-width: 400px) {
-      min-height: 100%; 
+      min-height: 0; 
       height: 130px;
-    }
+    }  
   }
   &__card-patents {
     opacity: 0.8;
@@ -43,7 +47,7 @@
       text-decoration: none;
       opacity: 1;
     }
-    &:hover .what-we-do__button{
+    &:hover .what-we-do__button {
       background: $gold;
       color: $black;
     }

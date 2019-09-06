@@ -1,7 +1,69 @@
 scrollAnchor();      // скрол у якоря
 rating();            // рейтинг компании
-// slideReviews();   // слайдер - swiper   
-// sliderPosts()
+slideReviews();
+sliderPost()
+slideSpecialists()
+
+function slideReviews() {
+    var swiper = new Swiper('.swiper-container-reviews', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination-reviews',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
+
+
+
+function sliderPost() {
+    var swiper = new Swiper('.swiper-container-post', {
+        pagination: {
+            el: '.swiper-pagination-post',
+        },
+    });
+}
+
+function slideSpecialists() {
+    var swiper = new Swiper('.about-specialists__swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: '.swiper-pagination-specialists',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function scrollAnchor() {
     let anchors = document.querySelectorAll('a[href*="#"]');
 
@@ -141,33 +203,3 @@ function rating() {
 
 
 
-// СЛАЙДЕР 
-
-
-function slideReviews() {
-    var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 5500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-}
-
-
-function sliderPosts() {
-    var swiper = new Swiper('.swiper-container', {
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    });
-}

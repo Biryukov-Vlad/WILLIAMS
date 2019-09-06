@@ -1,11 +1,14 @@
 .slide-reviews {
-  margin-bottom: -100px;
+  // margin-bottom: -100px;
   @media (max-width: $desktop) {
     margin-bottom: -10px;
   }
 
   &__block {
     padding: 100px 0 60px 0;
+    @media (max-width: $tablet){
+      padding: 50px 0 50px 0;
+    }
   }
   &__name {
     @include text-style(16, 24);
@@ -42,14 +45,14 @@
       justify-content: space-around;
     }
   }
+ 
 
-  .swiper-slide_desktop {
-    display: none;
-  }
-
-  .swiper-container {
+  .swiper-container-reviews {
+    overflow: hidden;
+    user-select: none;
+    position: relative;
     width: 100%;
-    height: 280px;
+    height: 220px;
     margin-left: auto;
     margin-right: auto;
     @media (max-width: $desktop) {
@@ -65,12 +68,13 @@
     padding-top: 28px;
   }
   .swiper-button-next {
+    position: absolute;
+    top: 80px;
     @include sprite-manual_2x(16, 157);
     transition-property: opacity;
     transition-duration: 0.3s;
     height: 26px;
     width: 14px;
-    top: 80px;
     &:hover {
       opacity: 0.5;
     }
@@ -79,12 +83,13 @@
     }
   }
   .swiper-button-prev {
+    position: absolute;
+    top: 80px;
     @include sprite-manual_2x(16, 157);
     transform: scaleX(-1);
     user-select: none;
     height: 26px;
     width: 14px;
-    top: 80px;
     transition-property: opacity;
     transition-duration: 0.3s;
     &:hover {
@@ -101,9 +106,11 @@
     height: 2px;
     background: $gold;
   }
-  .swiper-pagination {
-    position: static;
-    margin-top: -20px;
+  .swiper-pagination-reviews {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 10;  
   }
   .swiper-control-block {
     margin-top: 57px;

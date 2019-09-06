@@ -2,13 +2,162 @@
   position: relative;
   background: url("./img/bg-who-we-are.png");
   z-index: 3;
-  padding: 300px 0 200px;
-  background-repeat: no-repeat; 
+  padding: 190px 0 210px;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media (max-width: $tablet){
+    padding: 180px 0 150px;
+  }
+  .anchor {
+    position: relative;
+    top: 150px;
+    margin: 0px auto 0 auto;
+    @media (max-width: $tablet){
+      top: 80px;
+    }
+  }
+}
 
+.about-specialists {
+  &__block {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__desc {
+    padding-top: 15px;
+  }
+  &__text {
+    padding-bottom: 10px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    background: url("./img/specialists.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &__content {
+    position: relative;
+    grid-column: 3/11;
+    @media (max-width: $big-desktop) {
+      grid-column: 2/12;
+    }
+    @media (max-width: 920px) {
+      grid-column: 1/13;
+    }
+    @media (max-width: $tablet) {
+      grid-column: 1/5;
+    }
+  }
+  &__swiper-container {
+    overflow: hidden;
+    user-select: none;
+    position: relative;
+    width: 100%;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 747px) {
+      height: 500px;
+    }
+    @media (max-width: 640px) {
+      height: 480px;
+    }
+    @media (max-width: 500px) {
+      height: 430px;
+    }
+    @media (max-width: 450px) {
+      height: 390px;
+    }
+    @media (max-width: 360px) {
+      height: 350px;
+    }
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+  }
+  .swiper-button-next {
+    position: absolute;
+    top: 290px;
+    right: -50px;
+    @include sprite-manual_2x(16, 157);
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    height: 26px;
+    width: 14px;
+    &:hover {
+      opacity: 0.5;
+    }
+    @media (max-width: 950px) {
+      display: none;
+    }
+  }
+  .swiper-button-prev {
+    position: absolute;
+    top: 290px;
+    left: -50px;
+    @include sprite-manual_2x(16, 157);
+    transform: scaleX(-1);
+    user-select: none;
+    height: 26px;
+    width: 14px;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    &:hover {
+      opacity: 0.5;
+    }
+    @media (max-width: 950px) {
+      display: none;
+    }
+  }
 
-  .anchor{
-    margin: 0 auto;
+  .swiper-pagination-bullet {
+    border-radius: 0;
+    width: 25px;
+    height: 2px;
+    background: $gold;
+  }
+  .swiper-pagination-specialists {
+    position: absolute;
+    top: 500px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    @media (max-width: $tablet) {
+      top: 470px;
+    }
+    @media (max-width: 650px) {
+      top: 450px;
+    }
+    @media (max-width: 550px) {
+      top: 410px;
+    }
+    @media (max-width: 500px) {
+      top: 380px;
+    }
+    @media (max-width: 400px) {
+      top: 350px;
+    }
+    @media (max-width: 360px) {
+      top: 320px;
+    }
+  }
+  .swiper-control-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
   }
 }
