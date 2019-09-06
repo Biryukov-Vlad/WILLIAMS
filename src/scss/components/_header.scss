@@ -10,37 +10,13 @@
   &__block {
     display: flex;
     align-items: center;
-    @media (max-width: $header-point) {
-      justify-content: space-between;
-    }
   }
   &__nav {
     @media (max-width: $tablet) {
       display: none;
     }
   }
-  &__hamburger {
-    z-index: 50; 
-    position: relative;
-    margin: 0 0 0 auto;
-    display: none;
-    width: 30px;
-    height: 24px;
-    cursor: pointer;
-    &-line {
-      width: 30px;
-      height: 2px;
-      background: $gold;
-    }
-    @media (max-width: $tablet) {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    @media (max-width: $header-point) {
-      margin: 0px;
-    }
-  }
+
   &__box-logo {
     border-radius: 50%;
     width: 80px;
@@ -81,6 +57,7 @@
     @include text-style(16, 20);
     text-transform: uppercase;
     display: inline-block;
+    white-space: nowrap;
     color: $gold;
     font-weight: 600;
     margin-left: 25px;
@@ -96,7 +73,7 @@
     @media (max-width: $header-point) {
       @include text-style(20, 26);
       margin-bottom: 0px;
-      margin-left: -30px;
+      margin-left: 15px;
     }
 
     &:hover {

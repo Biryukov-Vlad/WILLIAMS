@@ -1,6 +1,6 @@
 scrollAnchor();      // скрол у якоря
 rating();            // рейтинг компании
-slideReviews();   // слайдер - swiper   
+// slideReviews();   // слайдер - swiper   
 // sliderPosts()
 function scrollAnchor() {
     let anchors = document.querySelectorAll('a[href*="#"]');
@@ -19,7 +19,7 @@ function scrollAnchor() {
     }
 }
 
-var hamburger = document.getElementsByClassName("header__hamburger")[0],
+var hamburger = document.getElementsByClassName("hamburger")[0],
     menuModal = document.getElementsByClassName("menu-mobile")[0];
 
 hamburger.onclick = function () {

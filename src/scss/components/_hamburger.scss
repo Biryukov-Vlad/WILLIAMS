@@ -1,0 +1,25 @@
+.hamburger {
+  z-index: 50;
+  position: absolute;
+  display: none;
+  width: 30px;
+  right: 20px;
+  top: 45px;
+  height: 24px;
+  cursor: pointer;
+  &-line {
+    width: 30px;
+    height: 2px;
+    background: $gold;
+  }
+  @media (max-width: $tablet) {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media (max-width: $header-point) {
+    margin: 0px;
+    top: 35px;
+  }
+}
