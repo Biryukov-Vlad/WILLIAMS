@@ -7,17 +7,24 @@
   z-index: 0;
   width: 100%;
 }
+
 .section-top_main {
   position: relative;
   z-index: 3;
   padding: 290px 0 0px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 212, 255, 0) 40%),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 212, 255, 0) 40%),
     url("./img/bg-mountains.png");
   background-repeat: no-repeat;
-  background-position-y: 200px;
   background-size: cover;
+  background-position-y: 200px;
+  margin-bottom: -5px;
   @media (max-width: $tablet) {
     padding-top: 150px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 212, 255, 0) 40%),
+    url("./img/bg-mountains.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 200px;
   }
 
   .we-win__title {
@@ -30,9 +37,19 @@
 .main-content-site {
   position: relative;
   z-index: 5;
-  background: #050713;
+  // background: #050713;
 }
+.main-content-site__index {
+  background: linear-gradient(359.99deg, #040612 0.01%, rgba(0, 0, 0, 0) 38.17%),
+    linear-gradient(188.86deg, #000000 8.78%, rgba(0, 0, 0, 0) 35.31%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/bg-index-main.png") linear-gradient(229.87deg, #000000 11.13%, #004fad 79.61%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .section-top {
+  margin-top: -10px;
   &__social-link {
     margin-right: 5px;
   }

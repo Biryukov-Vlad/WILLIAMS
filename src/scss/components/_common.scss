@@ -12,7 +12,7 @@ $black_gold: #0e1420;
 $transition: 0.5s;
 //background
 $bg_menu_mobile: rgba(1, 23, 45, 0.95);
-$bg_card: rgba(27, 49, 75, 0.75);
+$bg_card: rgba(22, 40, 63, 0.87);
 //point
 $big-desktop: 1180px;
 $desktop: 1023px;
@@ -28,12 +28,4 @@ $header-point: 456px;
 .wrapper {
   overflow: hidden;
   background: #050713;
-}
-@keyframes rot {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
+} 
