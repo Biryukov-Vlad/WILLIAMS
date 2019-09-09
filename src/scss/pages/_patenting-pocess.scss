@@ -1,0 +1,99 @@
+.section-top_patenting-pocess {
+  position: relative;
+  background: url("./img/bg-patenting-pocess.png");
+  z-index: 3;
+  padding: 190px 0 210px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (max-width: $tablet) {
+    padding: 180px 0 150px;
+  }
+  .anchor {
+    position: relative;
+    top: 150px;
+    margin: 0px auto 0 auto;
+    @media (max-width: $tablet) {
+      top: 80px;
+    }
+  }
+}
+.about-patent {
+  &__block {
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    @media (max-width: $desktop) {
+      padding-top: 30px;
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__content {
+    grid-column: 3/11;
+    @media (max-width: $big-desktop) {
+      grid-column: 2/12;
+    }
+    @media (max-width: $tablet) {
+      grid-column: 1/5;
+    }
+  }
+
+  &__text {
+    @include text-style(18, 29);
+    margin: 0px;
+    padding-bottom: 25px;
+    font-family: $Signika;
+    font-style: normal;
+    font-weight: normal;
+    color: $white_pale;
+    font-weight: 300;
+    @media (max-width: $desktop) {
+      padding-bottom: 15px;
+    }
+    &_bottom {
+      padding-bottom: 40px;
+      @media (max-width: $desktop) {
+        padding-bottom: 25px;
+      }
+    }
+  }
+  &__desc {
+    @include text-style(16, 26);
+    margin: 0px;
+    padding-bottom: 25px;
+    font-family: $Signika;
+    font-style: normal;
+    font-weight: normal;
+    color: $white_pale;
+    font-weight: 300;
+  }
+  &__img-process {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  &__title {
+    padding-top: 15px;
+  }
+  &__list {
+    padding: 30px 0 10px 15px;
+    margin: 0px;
+
+    &-item {
+      @include text-style(16, 26);
+      margin: 0px;
+      padding-bottom: 25px;
+      font-family: $Signika;
+      font-style: normal;
+      font-weight: normal;
+      color: $white_pale;
+      font-weight: 300;
+      @media (max-width: $desktop) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

@@ -14,11 +14,12 @@
     color: $white_muddy;
     &_gold {
       color: rgba(255, 225, 149, 0.5);
+      &:hover {
+        color: rgba(255, 225, 149, 0.5);
+        text-decoration: none;
+      }
     }
-    &:hover {
-      text-decoration: none;
-      color: $white_muddy;
-    }
+     
   }
   &__title {
     margin-top: 10px;

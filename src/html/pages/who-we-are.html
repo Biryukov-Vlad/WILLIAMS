@@ -18,19 +18,11 @@
 
     <section class="section-top section-top_who-we-are">
       <div class="container">
-        <div class="top-site">
-          <div class="top-site__block">
-            <div class="top-site__content">
-              <a href="#" class="top-site__link"><span class="top-site__link_gold">Home /</span> Who We Are</a>
-              <h1 class="top-site__title title_h1">Who We Are</h1>
-              <p class="top-site__text text_s">Over the last five years, practitioners at Williams Intellectual Property
-                have
-                written more than 500 utility patent applications for clients across the world.</p>
-              <div class="top-site__wrap-btn"> <a href="#" class="top-site__button button button-arrow_black">CONTACT
-                  US</a></div>
-            </div>
-          </div>
-        </div>
+        @@include('./../components/top-site-content.html',{
+          "title":"Who We Are",
+          "text":"Over the last five years, practitioners at Williams Intellectual Property have written more than 500 utility patent applications for clients across the world.",
+          "name":"Who We Are"
+        })
 
 
         @@include('./../components/anchor.html',{
@@ -42,9 +34,10 @@
     </section>
 
     <main class="main-content-site">
-        @@include('./../components/about-specialists.html')
-      @@include('./../components/what-we-do.html')
-      @@include('./../components/won-patents.html')
+      @@include('./../components/about-specialists.html')
+      @@include('./../components/what-we-do.html',{
+        "title":"We Can Help With"
+      }) 
       @@include('./../components/call-us-today.html')
       @@include('./../components/slide-reviews.html')
       @@include('./../components/blog-news.html')

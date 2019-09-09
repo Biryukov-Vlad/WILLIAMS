@@ -1,4 +1,4 @@
-scrollAnchor();      // скрол у якоря
+// scrollAnchor();      // скрол у якоря
 rating();            // рейтинг компании
 slideReviews();
 sliderPost()

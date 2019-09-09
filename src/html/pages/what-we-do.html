@@ -1,0 +1,58 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+  <title>Who We Are</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('./../components/menu-mobile.html')
+    @@include('./../components/header.html')
+    @@include('./../components/hamburger.html')
+
+    <section class="section-top section-top_who-we-do">
+      <div class="container">
+        @@include('./../components/top-site-content.html',{
+          "title":"What We Do",
+          "text":"Over the last five years, practitioners at Williams Intellectual Property have written more than 500 utility patent applications for clients across the world.",
+          "name":"What We Do"
+        })
+
+
+        @@include('./../components/anchor.html',{
+        "class":"section-top",
+        "link":"#footer"
+        })
+
+      </div>
+    </section>
+
+    <main class="main-content-site">
+
+
+
+      @@include('./../components/what-we-do.html',{
+      "title":"Which Patent is Right for You?"
+      }) 
+      @@include('./../components/call-us-today.html')
+      @@include('./../components/slide-reviews.html')
+      @@include('./../components/blog-news.html')
+
+    </main>
+
+    @@include('./../components/footer.html')
+  </div>
+
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+<script src="main.js"></script>
+<script src="what-we-do.js"></script>
+
+</html>

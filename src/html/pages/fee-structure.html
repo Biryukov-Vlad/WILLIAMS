@@ -1,0 +1,124 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+  <title>Who We Are</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('./../components/menu-mobile.html')
+    @@include('./../components/header.html')
+    @@include('./../components/hamburger.html')
+    <div class="bg-site bg-site_fee-structure"></div>
+    <section class="section-top section-top_fee-structure">
+      <div class="container">
+         @@include('./../components/top-site-content.html',{
+          "title":"Fee Structure",
+          "text":"A patent is issued by the US Patent and Trademark Office, granting a temporary monopoly of the invention, in exchange for a full disclosure of the invention.",
+          "name":"Fee Structure"
+        })
+        @@include('./../components/anchor.html',{
+        "class":"section-top",
+        "link":"#footer"
+        })
+      </div>
+    </section>
+
+    <main class="main-content-site">
+
+
+      <div class="price">
+        <div class="container">
+          <div class="price__block">
+            <div class="price__content">
+
+              <h2 class="price__title title_h2">Filing Fee & Billing Details</h2>
+
+              <div class="price__description">
+                <p class="price__text">
+                  Williams Intellectual Property charges flat fees for patent prosecution in the United States. We don’t
+                  add surcharges onto any government filing fees or bill you additional fees (including Office Action
+                  responses and amendments) until prosecution on your patent application is closed. Utility and Design
+                  fees include all office action responses incurred during prosecution of your patent application.</p>
+                <p class="price__text">
+                  You may incur separate fees for drawings (to a drafting company, if needed), or actions subsequent
+                  closure of prosecution, such as continuing prosecution, continuing applications, requests for
+                  continued examination, continuation-in-part applications, and any interference proceedings. In most
+                  instances the fee you pay us will carry you through to issuance or abandonment of your patent
+                  application. Call us for a free consultation if you’d like more information regarding our fees.</p>
+              </div>
+
+              <h2 class="price__title title_h2">Fee Schedule</h2>
+
+              <div class="price__description">
+                <p class="price__text price__text_bold">Williams Intellectual Property Flat Fees:</p>
+                <p class="price__text"> Includes ALL office action responses – you pay nothing more until prosecution is
+                  closed</p>
+                <p class="price__text price__text_price"> Utility Patent: $3500 – $7500</p>
+                <p class="price__text price__text_price"> Provisional Patent: $1550 – $1875</p>
+                <p class="price__text">Design Patent: $1250 – $1875 </p>
+                <p class="price__text"> For patent search and all other fees, please contact our office.</p>
+
+                <p class="price__text"> Utility and Design fees include all office action responses incurred during
+                  prosecution of your patent application.</p>
+              </div>
+
+
+
+              <h2 class="price__title title_h2">Fees due to the USPTO</h2>
+              <p class="price__text"> You are responsible for the USPTO fees, including the initial filing and the issue
+                fee to issue your patent should your patent application be allowed. See list of fees here.</p>
+
+              <img src="./img/pic.png" alt="" class="price__img-pic">
+
+              <p class="price__text text_s">
+                *A microentity is an inventor who reported gross income of less than $150,162 last year and has less
+                than 4 patents in their name.</p>
+              <p class="price__text text_s">
+                **A small entity is a government, a nonprofit company, or higher education institution or a company with
+                less than 50 employees.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      @@include('./../components/call-us-today.html')
+      @@include('./../components/what-we-do.html',{
+      "title":"We Can Help With"
+      })
+      @@include('./../components/slide-reviews.html')
+      @@include('./../components/blog-news.html')
+
+    </main>
+
+    @@include('./../components/footer.html')
+  </div>
+
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+<script src="main.js"></script>
+
+</html>
