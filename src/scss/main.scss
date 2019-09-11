@@ -8,21 +8,19 @@
 
 @import "./components/fonts";
 
-//Импорт стилей страниц    
+//Импорт стилей страниц
 @import "./pages/index";
 @import "./pages/who-we-are";
 @import "./pages/what-we-do";
-@import "./pages/patenting-pocess";
+@import "./pages/patenting-process";
 @import "./pages/fee-structure";
 
-
-//Импорт компонентов для страниц     
+//Импорт компонентов для страниц
 @import "./components/header";
-@import "./components/footer"; 
-@import "./components/anchor";
-@import "./components/hamburger";
+@import "./components/footer";
+@import "./components/anchor"; 
 @import "./components/top-site";
-@import "./components/social-links";
+@import "./components/social-links"; 
 @import "./components/menu-mobile";
 @import "./components/we-win";
 @import "./components/slide-reviews";
@@ -31,3 +29,4 @@
 @import "./components/call-us-today";
 @import "./components/won-patents";
 @import "./components/blog-news";
+@import "./components/bg-site";

@@ -10,21 +10,21 @@
   <title>WILLIAMS</title>
 </head>
 
-
+ 
 <body>
   <div class="wrapper">
-    @@include('./../components/menu-mobile.html')
-    @@include('./../components/header.html')
-    @@include('./../components/hamburger.html')
 
-    <div class="section-top__bg-stars"></div>
+    @@include('./../components/menu-mobile.html')
+    @@include('./../components/header.html') 
+
+    <!-- <div class="section-top__bg-stars"></div> -->
     <section class="section-top section-top_main">
       <div class="container">
         @@include('./../components/we-win.html',{
         "title":"We Win Patents",
         "text":"The Congress shall have the power... to promote the progress of science and useful arts, by securing for        limited times to authors and inventors the exclusive right to their respective writings and discoveries.” US        Constitution § 8, Clause 8"
         })
-        @@include('./../components/anchor.html',{ 
+        @@include('./../components/anchor.html',{
         "class":"section-top",
         "link":"#footer"
         })
@@ -38,10 +38,10 @@
 
     <main class="main-content-site main-content-site__index">
       @@include('./../components/what-we-do.html',{
-        "title":"We Can Help With"
+      "title":"We Can Help With"
       })
       @@include('./../components/thank-you.html')
-      @@include('./../components/won-patents.html') 
+      @@include('./../components/won-patents.html')
       @@include('./../components/call-us-today.html')
       @@include('./../components/blog-news.html')
     </main>

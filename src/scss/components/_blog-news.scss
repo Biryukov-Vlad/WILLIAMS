@@ -25,6 +25,7 @@
     }
   }
   &__inner-post {
+    /* в js через событие лучше сделать*/
     position: relative;
     width: 280px;
     height: 405px;
@@ -39,7 +40,7 @@
     margin: 10px 0;
     @media (max-width: $tablet) {
       margin: 0;
-      z-index: -1;
+      // z-index: -1;
     }
 
     &:nth-child(1) {
@@ -135,7 +136,7 @@
   .swiper-container-post {
     overflow: hidden;
     user-select: none;
-    position: relative;
+    // position: relative;
     width: 100%;
     height: 420px;
   }
@@ -156,6 +157,6 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    z-index: 11;
+    // z-index: 11;
   }
 }

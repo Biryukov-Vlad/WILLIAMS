@@ -1,6 +1,10 @@
+.dn {
+  display: none;
+}
+
 .header {
-  z-index: 5;
   position: absolute;
+
   top: 0px;
   width: 100%;
   padding: 60px 0;
@@ -8,8 +12,69 @@
     padding: 18px 0;
   }
   &__block {
+    position: relative;
     display: flex;
     align-items: center;
+  }
+  &__burger {
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    transform: translateY(-50%);
+    right: 20px;
+    top: 50%;
+    z-index: 50;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+
+    @media (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width: $header-point) {
+      right: 0px;
+    }
+
+    &-line {
+      position: absolute;
+      opacity: 1;
+      transition: 0.3s;
+      width: 30px;
+      height: 2px;
+      background: $gold;
+      &:nth-child(1) {
+        top: 0px;
+      }
+      &:nth-child(2) {
+        top: 9px;
+      }
+      &:nth-child(3) {
+        top: 9px;
+      }
+      &:nth-child(4) {
+        top: 20px;
+      }
+      /* стили для js при нажатии на hamburger*/
+      &_active {
+        &:nth-child(1) {
+          opacity: 0;
+          top: 0px;
+        }
+        &:nth-child(2) {
+          top: 9px;
+          transform: rotate(-45deg);
+        }
+        &:nth-child(3) {
+          top: 9px;
+          transform: rotate(45deg);
+        }
+        &:nth-child(4) {
+          opacity: 0;
+          top: 20px;
+        }
+      }
+    }
   }
   &__nav {
     @media (max-width: $tablet) {
@@ -21,7 +86,7 @@
     border-radius: 50%;
     width: 80px;
     margin-right: 25px;
-    z-index: 10;
+    // z-index: 10;
     @media (max-width: $header-point) {
       margin: 0px;
     }
@@ -113,5 +178,26 @@
         }
       }
     }
+  }
+}
+
+.header_fixed {
+  position: fixed;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+  z-index: 5;
+  background: rgba(27, 49, 75, 0.9);
+  padding: 15px 0;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+  .header__box-logo {
+    width: 50px;
+    margin-right: 50px;
+  }
+  .header__logo {
+    width: 50px;
+    height: 35px;
+    @include sprite-manual_2x(82, 1);
   }
 }
