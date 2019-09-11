@@ -14,8 +14,9 @@
 @import "./pages/what-we-do";
 @import "./pages/patenting-process";
 @import "./pages/fee-structure";
+@import "./pages/blog";
 
-//Импорт компонентов для страниц
+//Импорт компонентов для страниц  
 @import "./components/header";
 @import "./components/footer";
 @import "./components/anchor"; 
@@ -28,5 +29,7 @@
 @import "./components/thank-you";
 @import "./components/call-us-today";
 @import "./components/won-patents";
-@import "./components/blog-news";
+@import "./components/blog-news"; 
 @import "./components/bg-site";
+
+ 

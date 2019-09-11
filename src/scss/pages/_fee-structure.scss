@@ -1,5 +1,5 @@
 .section-top_fee-structure {
-  position: relative;
+  // position: relative;
   // background: url("./img/bg-fee-structure.png");
   // z-index: 3;
   padding: 190px 0 210px;
@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
   @media (max-width: $tablet) {
-    padding: 180px 0 150px;
+    padding: 180px 0 120px;
   }
   .anchor {
     position: relative;
@@ -54,6 +54,9 @@
   &__title {
     padding-bottom: 35px;
     padding-top: 54px;
+    @media (max-width: $tablet) {
+      padding-top: 24px;
+    }
   }
   &__text {
     padding-bottom: 20px;

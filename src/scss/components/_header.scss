@@ -1,6 +1,4 @@
-.dn {
-  display: none;
-}
+ 
 
 .header {
   position: absolute;
@@ -104,6 +102,7 @@
   }
   &__link {
     margin-right: 18px;
+    white-space: nowrap;
   }
   &__contacts {
     display: flex;

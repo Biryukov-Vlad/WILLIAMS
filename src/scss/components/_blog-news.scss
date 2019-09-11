@@ -24,8 +24,7 @@
       display: block;
     }
   }
-  &__inner-post {
-    /* в js через событие лучше сделать*/
+  &__inner-post { 
     position: relative;
     width: 280px;
     height: 405px;

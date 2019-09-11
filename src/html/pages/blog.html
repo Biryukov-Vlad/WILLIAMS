@@ -1,0 +1,132 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+  <title>Blog</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('./../components/menu-mobile.html')
+    @@include('./../components/header.html')
+
+    <section class="section-top section-top_blog">
+      <div class="container">
+        @@include('./../components/top-site-content.html',{
+        "title":"Blog",
+        "text":"A patent is issued by the US Patent and Trademark Office, granting a temporary monopoly of the invention, in exchange for a full disclosure of the invention.",
+        "name":"Blog"
+        }) 
+        @@include('./../components/anchor.html',{
+        "class":"section-top",
+        "link":"#footer"
+        })
+  
+      </div>
+    </section>
+
+    <main class="main-content-site">
+
+      <section class="blog">
+        <div class="container">
+          <div class="blog__block">
+            <div class="blog__container-news">
+              @@include('./../components/card-news.html',{ 
+                "class":"blog",
+              "img":"post_1.png",
+              "name-post":"How To Increase Your ROI By Generating Star Patents In Your Portfolio?",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to the crown."
+              })
+             
+              @@include('./../components/card-news.html',{
+                "class":"blog",
+              "img":"post_2.png",
+              "name-post":"5 Types Of Patent Examiners You Should Know",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to     the crown."
+              })
+      
+              @@include('./../components/card-news.html',{
+                "class":"blog",
+              "img":"post_3.png",
+              "name-post":"How To Decrease Grant Time Using Simple Analytics",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to        the crown."
+              })
+              @@include('./../components/card-news.html',{
+                "class":"blog",
+              "img":"post_4.png",
+              "name-post":"How To Perform A Comprehensive Trademark Search?",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to        the crown."
+              })
+              @@include('./../components/card-news.html',{ 
+                "class":"blog",
+              "img":"post_5.png",
+              "name-post":"How To Increase Your ROI By Generating Star Patents In Your Portfolio?",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to the crown."
+              })
+             
+              @@include('./../components/card-news.html',{
+                "class":"blog",
+              "img":"post_6.png",
+              "name-post":"5 Types Of Patent Examiners You Should Know",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to     the crown."
+              })
+      
+              @@include('./../components/card-news.html',{
+                "class":"blog",
+              "img":"post_7.png",
+              "name-post":"How To Decrease Grant Time Using Simple Analytics",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to        the crown."
+              })
+              @@include('./../components/card-news.html',{
+                "class":"blog",
+              "img":"post_4.png",
+              "name-post":"How To Perform A Comprehensive Trademark Search?",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to        the crown."
+              })
+              @@include('./../components/card-news.html',{ 
+                "class":"blog",
+              "img":"post_5.png",
+              "name-post":"How To Increase Your ROI By Generating Star Patents In Your Portfolio?",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to the crown."
+              })
+             
+              @@include('./../components/card-news.html',{
+                "class":"blog",
+              "img":"post_7.png",
+              "name-post":"5 Types Of Patent Examiners You Should Know",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to     the crown."
+              })
+      
+              @@include('./../components/card-news.html',{
+                "class":"blog",
+              "img":"post_3.png",
+              "name-post":"How To Decrease Grant Time Using Simple Analytics",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to        the crown."
+              })
+              @@include('./../components/card-news.html',{
+                "class":"blog",
+              "img":"post_4.png",
+              "name-post":"How To Perform A Comprehensive Trademark Search?",
+              "text":"The beauty of a crown is enhanced by its jewels. The gold, no matter how pure, just gives structure to        the crown."
+              })
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('./../components/call-us-today.html') 
+    </main>
+
+    @@include('./../components/footer.html')
+  </div>
+
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+<script src="main.js"></script>
+
+</html>
