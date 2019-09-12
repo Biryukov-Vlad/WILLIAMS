@@ -79,7 +79,7 @@
   display: inline-block;
 
   &::before {
-    @include sprite-manual_2x(1, 162); 
+    @include sprite-manual_2x(1, 162);
     position: absolute;
     content: "";
     left: 12px;
@@ -87,6 +87,7 @@
     width: 15px;
     height: 10px;
   }
+  
 }
 .link_nav {
   color: $white_pale;
@@ -94,7 +95,9 @@
     color: $gold;
   }
 }
-
+.link_nav_active {
+  color: $white_muddy;
+}
 .title_h1 {
   @include text-style(56, 52);
   margin: 0px;

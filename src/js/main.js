@@ -1,9 +1,10 @@
 // scrollAnchor();      // скрол у якоря
-rating();            // рейтинг компании
+chechURL();
+headerFidex();// фиксация header при скроле
 slideReviews();
 sliderPost();
 slideSpecialists();
-headerFidex();// фиксация header при скроле
+rating();            // рейтинг компании
 function slideReviews() {
    var swiper = new Swiper('.swiper-container-reviews', {
       spaceBetween: 30,
@@ -223,6 +224,28 @@ function headerFidex() {
 
 
 
-window.onload = () => {
-   console.log(true);
+// window.onload = () => {
+//    console.log(true);
+// }
+
+
+function chechURL() {
+   const linkHeader = document.querySelectorAll(".header__link_js")
+   const linkMobileMenu = document.querySelectorAll(".menu-mobile__link_js")
+   const linkFooter = document.querySelectorAll(".footer__link_js")
+
+   function colorlinkActive(number) {
+      linkHeader[number].classList.add("link_nav_active")
+      linkMobileMenu[number].classList.add("link_nav_active")
+      linkFooter[number].classList.add("link_nav_active")
+   }
+
+   if (window.location.pathname == "/who-we-are.html") colorlinkActive(0)
+   else if (window.location.pathname == "/what-we-do.html") colorlinkActive(1)
+   else if (window.location.pathname == "/patenting-process.html") colorlinkActive(2)
+   else if (window.location.pathname == "/fee-structure.html") colorlinkActive(4)
+   else if (window.location.pathname == "/contact.html") colorlinkActive(5)
+   else if (window.location.pathname == "/blog.html") colorlinkActive(6)
+
+
 }

@@ -34,6 +34,6 @@ $header-point: 456px;
     transform: translate(-50%, -50%) rotate(0);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(-360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
