@@ -1,8 +1,11 @@
+// стили для кнопок которые находятся только на главной странице (index)
+// я перебиты вконце этого документа scss
+// внизу есть стили для fixed header
 .header {
   position: absolute;
   top: 0px;
   width: 100%;
-  padding: 60px 0;
+  padding: 20px 0;
   @media (max-width: $tablet) {
     padding: 18px 0;
   }
@@ -104,15 +107,15 @@
     display: flex;
     align-items: center;
     @media (max-width: $big-desktop) {
-      margin-bottom: -164px;
+      // margin-bottom: -164px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
     }
-    @media (max-width: 1069px) {
-      margin-bottom: -140px;
-    }
+    // @media (max-width: 1069px) {
+    //   margin-bottom: -140px;
+    // }
     @media (max-width: $tablet) {
       margin: 0px;
     }
@@ -121,15 +124,10 @@
     }
   }
   &__wrap-btn {
-    position: relative;
-    top: 65px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    @media (max-width: $big-desktop) {
-      top: 0;
-    }
   }
 
   &__phone {
@@ -180,23 +178,8 @@
       width: 100%;
     }
 
-    &_add_js {
-      color: $gold;
-      background: $black_gold;
-      &:hover::before {
-        background-position: -0px -173px;
-      }
-      &:hover {
-        background: $gold;
-        color: $black;
-      }
-      @media (max-width: $tablet) {
-        display: none;
-      }
-    }
-
     &-desktop {
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
 
       @media (max-width: $header-point) {
         display: none;
@@ -213,6 +196,51 @@
         &::before {
           left: 15%;
         }
+      }
+    }
+  }
+}
+
+.wrapper_index {
+  .header {
+    &__contacts {
+      @media (max-width: $big-desktop) {
+        margin-bottom: -164px;
+      }
+      @media (max-width: 1069px) {
+        margin-bottom: -140px;
+      }
+      @media (max-width: $tablet) {
+        margin: 0px;
+      }
+    }
+    &__wrap-btn {
+      position: relative;
+      top: 65px;
+      @media (max-width: $big-desktop) {
+        top: 0;
+      }
+    }
+    &__button {
+      // &_add_js:not([href]):not([tabindex]) {
+      // color: $gold;
+      // }
+      &_add_js {
+        color: $gold;
+        background: $black_gold;
+        &:hover::before {
+          background-position: -0px -173px;
+        }
+        &:hover {
+          background: $gold;
+          color: $black;
+        }
+        @media (max-width: $tablet) {
+          display: none;
+        }
+      }
+      &-desktop {
+        margin-bottom: 10px;
       }
     }
   }
@@ -240,7 +268,13 @@
   .header__button_add_js {
     display: none;
   }
-  .header__contacts{
+  .header__contacts {
     margin: 0;
+  }
+  .header__wrap-btn {
+    top: 0;
+  }
+  .header__button-desktop {
+    margin-bottom: 0;
   }
 }

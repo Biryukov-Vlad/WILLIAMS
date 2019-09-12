@@ -1,5 +1,8 @@
+
 // scrollAnchor();      // скрол у якоря
 chechURL();
+scrollBgFilter()
+preloader();
 headerFidex();// фиксация header при скроле
 slideReviews();
 sliderPost();
@@ -223,29 +226,60 @@ function headerFidex() {
 }
 
 
-
-// window.onload = () => {
-//    console.log(true);
-// }
-
-
 function chechURL() {
-   const linkHeader = document.querySelectorAll(".header__link_js")
-   const linkMobileMenu = document.querySelectorAll(".menu-mobile__link_js")
-   const linkFooter = document.querySelectorAll(".footer__link_js")
+   const linkHeader = document.querySelectorAll(".header__link_js");
+   const linkMobileMenu = document.querySelectorAll(".menu-mobile__link_js");
+   const linkFooter = document.querySelectorAll(".footer__link_js");
 
    function colorlinkActive(number) {
-      linkHeader[number].classList.add("link_nav_active")
-      linkMobileMenu[number].classList.add("link_nav_active")
-      linkFooter[number].classList.add("link_nav_active")
+      linkHeader[number].classList.add("link_nav_active");
+      linkMobileMenu[number].classList.add("link_nav_active");
+      linkFooter[number].classList.add("link_nav_active");
    }
 
-   if (window.location.pathname == "/who-we-are.html") colorlinkActive(0)
-   else if (window.location.pathname == "/what-we-do.html") colorlinkActive(1)
-   else if (window.location.pathname == "/patenting-process.html") colorlinkActive(2)
-   else if (window.location.pathname == "/fee-structure.html") colorlinkActive(4)
-   else if (window.location.pathname == "/contact.html") colorlinkActive(5)
-   else if (window.location.pathname == "/blog.html") colorlinkActive(6)
-
-
+   if (window.location.pathname == "/who-we-are.html") colorlinkActive(0);
+   else if (window.location.pathname == "/what-we-do.html") colorlinkActive(1);
+   else if (window.location.pathname == "/patenting-process.html") colorlinkActive(2);
+   else if (window.location.pathname == "/fee-structure.html") colorlinkActive(4);
+   else if (window.location.pathname == "/contact.html") colorlinkActive(5);
+   else if (window.location.pathname == "/blog.html") colorlinkActive(6);
 }
+
+
+function preloader() {
+   const body = document.body;
+   const preloader = document.getElementsByClassName("preloader_js")[0];
+   const preloaderItem = document.querySelectorAll(".preloader__semicircle_js");
+   body.classList = "page-loading";
+   window.onload = () => {
+
+      preloader.style.background = "rgba(0, 0, 0, 0)";
+      body.classList.remove("page-loading");
+      preloaderItem[0].style.opacity = "0";
+      preloaderItem[1].style.opacity = "0";
+      preloaderItem[2].style.opacity = "0";
+
+      setTimeout(() => {
+         preloader.style.display = "none";
+
+      }, 1000);
+   }
+}
+
+
+function scrollBgFilter() {
+   const bgSite = document.querySelector(".bg-site");
+   window.addEventListener("scroll", () => {
+      let filter = window.pageYOffset / 1200;
+
+      let scale = window.pageYOffset / 15000; 
+      scale  ++
+      console.log(scale);
+      if (scale < 1) scale = 1
+      bgSite.style.filter = `blur(${filter}px)`;
+     
+      bgSite.style.transform = `scale(${scale})`
+   })
+}
+
+

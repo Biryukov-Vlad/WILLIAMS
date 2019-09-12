@@ -6,30 +6,42 @@
   z-index: -3;
 }
 .bg-site {
+  transition: .1s;
+  top: 0;
   height: 100%;
   width: 100%;
   position: fixed;
   object-fit: cover;
-  
+}
+.wrap-bg_js{
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
 .bg-stars_index {
   z-index: -2;
+  object-fit: cover;
   position: fixed;
   left: 50%;
-  top: 40%;
+  top: 40%; 
+  // height: 285%;
   width: 200%;
-  height: 285%;
+  height: 250%;
   transform: translate(-50%, -50%);
-  animation: preloader 100s infinite linear;
+  animation: rotBg 100s infinite linear;
   @media (max-width: $tablet) {
     display: none;
   }
   &-mobile {
-    position: absolute;
-    top: 0; 
     height: 100%;
     width: 100%;
-    transform:scale(2); 
+    position: fixed;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: scale(2);
     top: 0;
     z-index: -2;
     display: none;
@@ -41,7 +53,7 @@
 .section-top {
   // index
   &_index {
-    padding: 290px 0 130px;
+    padding: 300px 0 130px;
     background: linear-gradient(180.07deg, rgba(5, 7, 19, 0) 60.47%, #050713 99.88%), url("./img/Gora.png");
     @include cover();
     background-position-y: 200px;

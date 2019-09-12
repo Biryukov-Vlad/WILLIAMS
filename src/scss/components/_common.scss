@@ -13,6 +13,7 @@ $transition: 0.5s;
 //background
 $bg_menu_mobile: rgba(1, 23, 45, 0.95);
 $bg_card: rgba(22, 40, 63, 0.87);
+$bg_preloader: #0e1420;
 //point
 $big-desktop: 1180px;
 $desktop: 1023px;
@@ -29,11 +30,20 @@ $header-point: 456px;
   overflow: hidden;
   // background: #050713;
 }
-@keyframes preloader {
+@keyframes rotBg {
   0% {
     transform: translate(-50%, -50%) rotate(0);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes preloader {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
