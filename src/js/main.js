@@ -1,7 +1,6 @@
 
 // scrollAnchor();      // скрол у якоря
 chechURL();
-scrollBgFilter()
 preloader();
 headerFidex();// фиксация header при скроле
 slideReviews();
@@ -266,20 +265,20 @@ function preloader() {
    }
 }
 
+// scrollBgFilter()
+// function scrollBgFilter() {
+//    const bgSite = document.querySelector(".bg-site");
+//    window.addEventListener("scroll", () => {
+//       let filter = window.pageYOffset / 1200;
 
-function scrollBgFilter() {
-   const bgSite = document.querySelector(".bg-site");
-   window.addEventListener("scroll", () => {
-      let filter = window.pageYOffset / 1200;
-
-      let scale = window.pageYOffset / 15000; 
-      scale  ++
-      console.log(scale);
-      if (scale < 1) scale = 1
-      bgSite.style.filter = `blur(${filter}px)`;
+//       let scale = window.pageYOffset / 15000; 
+//       scale  ++
+//       console.log(scale);
+//       if (scale < 1) scale = 1
+//       bgSite.style.filter = `blur(${filter}px)`;
      
-      bgSite.style.transform = `scale(${scale})`
-   })
-}
+//       bgSite.style.transform = `scale(${scale})`
+//    })
+// }
 
 

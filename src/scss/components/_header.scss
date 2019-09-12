@@ -151,7 +151,8 @@
       @include text-style(20, 26);
       margin-bottom: 0px;
       margin-left: 15px;
-    }
+      margin: 0;
+    } 
 
     &:hover {
       color: $gold_muddy;
