@@ -10,15 +10,20 @@
   <title>WILLIAMS</title>
 </head>
 
- 
+
 <body>
   <div class="wrapper">
 
     @@include('./../components/menu-mobile.html')
-    @@include('./../components/header.html') 
+    @@include('./../components/header.html')
+    <div class="wrap-img">
+      <img src="./img/bg-stars-active.jpg" class=" bg-site bg-stars_index">
+      <img src="./img/bg-stars-mobile.jpg" class=" bg-site bg-stars_index-mobile">
+    </div>
 
-    <!-- <div class="section-top__bg-stars"></div> -->
-    <section class="section-top section-top_main">
+
+
+     <section class="section-top section-top_index">
       <div class="container">
         @@include('./../components/we-win.html',{
         "title":"We Win Patents",
@@ -36,7 +41,7 @@
 
     </section>
 
-    <main class="main-content-site main-content-site__index">
+    <main class="main-content-site main-content-site_index">
       @@include('./../components/what-we-do.html',{
       "title":"We Can Help With"
       })

@@ -1,0 +1,27 @@
+.section-top_contact { 
+  padding: 190px 0 150px;
+  @media (max-width: $tablet) {
+    padding: 180px 0 80px;
+  }
+  .anchor {
+    position: relative;
+    top: 150px;
+    margin: 0px auto 0 auto;
+    @media (max-width: $tablet) {
+      top: 80px;
+    }
+  }
+}
+
+.maps {
+  &__block {
+    padding: 0 0 50px 0;
+  }
+  &__maps {
+    background: url("./img/maps.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

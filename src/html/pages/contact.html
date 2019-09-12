@@ -1,0 +1,58 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrap-img">
+      <img src="./img/bg-contact.jpg" class=" bg-site bg-site_contact">
+    </div>
+
+    @@include('./../components/menu-mobile.html')
+    @@include('./../components/header.html')
+
+    <section class="section-top section-top_contact">
+      <div class="container">
+        @@include('./../components/top-site-content.html',{
+        "title":"Contact",
+        "text":"Benjamin Williams, Registered Patent Agent, Reg. No. 70416",
+        "name":"Contact"
+        })
+      </div>
+    </section>
+
+    <main class="main-content-site">
+
+      <div class="maps">
+        <div class="container">
+          <div class="maps__block">
+            <div class="maps__wrap-maps">
+              <!-- <img src="./img/maps.jpg" alt="maps" class="maps__maps"> -->
+              <div class="maps__maps"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      @@include('./../components/call-us-today.html')
+
+    </main>
+
+    @@include('./../components/footer.html')
+  </div>
+
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
+<script src="main.js"></script>
+<script src="contact.js"></script>
+
+</html>

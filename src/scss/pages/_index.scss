@@ -8,24 +8,24 @@
   width: 100%;
 }
 
-.section-top_main {
+.section-top_index {
   // position: relative;
   // z-index: 3;
-  padding: 290px 0 0px;
+  // padding: 290px 0 0px;
   // background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 212, 255, 0) 40%),
   //   url("./img/bg-mountains.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 200px;
-  margin-bottom: -5px;
-  @media (max-width: $tablet) {
-    padding-top: 150px;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position-y: 200px;
+  // margin-bottom: -5px;
+  // @media (max-width: $tablet) {
+    // padding-top: 150px;
     // background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 212, 255, 0) 40%),
     // url("./img/bg-mountains.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 200px;
-  }
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position-y: 200px;
+  // }
 
   .we-win__title {
     @include text-style(64, 60);
@@ -33,12 +33,17 @@
       @include text-style(36, 34);
     }
   }
+  .slide-reviews{
+    &__block{
+      margin-bottom: -120px;
+    }
+  }
 }
-.main-content-site {
+// .main-content-site {
   // position: relative;
   // z-index: 5;
   // background: #050713;
-}
+// }
 .main-content-site__index {
   // background: linear-gradient(359.99deg, #040612 0.01%, rgba(0, 0, 0, 0) 38.17%),
   //   linear-gradient(188.86deg, #000000 8.78%, rgba(0, 0, 0, 0) 35.31%),

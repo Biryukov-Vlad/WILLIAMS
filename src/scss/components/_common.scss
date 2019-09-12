@@ -27,5 +27,13 @@ $header-point: 456px;
 }
 .wrapper {
   overflow: hidden;
-  background: #050713;
-} 
+  // background: #050713;
+}
+@keyframes preloader {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}

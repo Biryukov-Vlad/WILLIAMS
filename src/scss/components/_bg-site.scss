@@ -1,5 +1,60 @@
+.wrap-img {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
 .bg-site {
   height: 100%;
   width: 100%;
-  position: fixed; 
+  position: fixed;
+  object-fit: cover;
+  
+}
+.bg-stars_index {
+  z-index: -2;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  width: 200%;
+  height: 285%;
+  transform: translate(-50%, -50%);
+  animation: preloader 100s infinite linear;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+  &-mobile {
+    position: absolute;
+    top: 0; 
+    height: 100%;
+    width: 100%;
+    transform:scale(2); 
+    top: 0;
+    z-index: -2;
+    display: none;
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+}
+.section-top {
+  // index
+  &_index {
+    padding: 290px 0 130px;
+    background: linear-gradient(180.07deg, rgba(5, 7, 19, 0) 60.47%, #050713 99.88%), url("./img/Gora.png");
+    @include cover();
+    background-position-y: 200px;
+    @media (max-width: $tablet) {
+      padding-top: 150px;
+      background-position-x: -220px;
+    }
+  }
+}
+// main content
+.main-content-site {
+  &_index {
+    background: linear-gradient(168.83deg, #050713 13.16%, rgba(5, 7, 19, 0) 65.63%), url("./img/bg-main-content.jpg");
+    @include cover();
+  }
 }

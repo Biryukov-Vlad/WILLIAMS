@@ -1,5 +1,7 @@
 .top-site {
   &__content {
+    display: flex;
+    flex-direction: column;
     width: 50%;
     margin-left: auto;
     @media (max-width: $tablet) {
@@ -19,7 +21,10 @@
         text-decoration: none;
       }
     }
-     
+  }
+  &__phone {
+    text-transform: lowercase;
+    padding-top: 10px ;
   }
   &__title {
     margin-top: 10px;

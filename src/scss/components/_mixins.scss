@@ -17,3 +17,11 @@
     text-decoration: none;
   }
 }
+@mixin cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@mixin contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
