@@ -5,25 +5,60 @@
   height: 100%;
   z-index: -3;
 }
+// main
+.main-content-site {
+  &_index {
+    background: linear-gradient(168.83deg, #050713 13.16%, rgba(5, 7, 19, 0) 65.63%), url("./img/bg-main-content.jpg");
+    @include cover();
+  }
+  // background: red;
+}
 .bg-site {
-  transition: .1s;
+  transition: 0.1s;
   top: 0;
   height: 100%;
   width: 100%;
   position: fixed;
   object-fit: cover;
+
+  &_who-we-are {
+    @media (max-width: $tablet) {
+      position: absolute;
+      height: 540px;
+    }
+  }
+  &_what-we-do {
+    @media (max-width: $tablet) {
+      position: absolute;
+      height: 570px;
+    }
+  }
+  &_patenting-process {
+    @media (max-width: $tablet) {
+      position: absolute;
+      height: 600px;
+    }
+  }
+  &_contact {
+    @media (max-width: $tablet) {
+      position: absolute;
+      height: 600px;
+    }
+  }
+  &_blog {
+    @media (max-width: $tablet) {
+      position: absolute;
+      height: 600px;
+    }
+  }
 }
-.wrap-bg_js{
-  height: 100%;
-  width: 100%;
-  position: fixed;
-}
+
 .bg-stars_index {
   z-index: -2;
   object-fit: cover;
   position: fixed;
   left: 50%;
-  top: 40%; 
+  top: 40%;
   // height: 285%;
   width: 200%;
   height: 250%;
@@ -61,12 +96,5 @@
       padding-top: 150px;
       background-position-x: -220px;
     }
-  }
-}
-// main content
-.main-content-site {
-  &_index {
-    background: linear-gradient(168.83deg, #050713 13.16%, rgba(5, 7, 19, 0) 65.63%), url("./img/bg-main-content.jpg");
-    @include cover();
   }
 }

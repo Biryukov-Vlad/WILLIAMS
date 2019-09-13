@@ -20,7 +20,9 @@ $desktop: 1023px;
 $tablet: 768px;
 
 $header-point: 456px;
-
+html body {
+  background-color: #050713;
+}
 .container {
   margin: 0 auto;
   max-width: 1220px;
