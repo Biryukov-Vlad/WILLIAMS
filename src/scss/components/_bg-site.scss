@@ -27,6 +27,12 @@
       height: 540px;
     }
   }
+  &_fee-structure{
+    @media (max-width: $tablet) {
+      position: absolute;
+      height: 570px;
+    }
+  }
   &_what-we-do {
     @media (max-width: $tablet) {
       position: absolute;
@@ -59,9 +65,10 @@
   position: fixed;
   left: 50%;
   top: 40%;
-  // height: 285%;
-  width: 200%;
-  height: 250%;
+  // width: 200%;
+  // height: 250%;
+  width: 120%;
+  height: 230%;
   transform: translate(-50%, -50%);
   animation: rotBg 100s infinite linear;
   @media (max-width: $tablet) {
