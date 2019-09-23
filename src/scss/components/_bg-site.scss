@@ -27,7 +27,7 @@
       height: 540px;
     }
   }
-  &_fee-structure{
+  &_fee-structure {
     @media (max-width: $tablet) {
       position: absolute;
       height: 570px;
@@ -61,23 +61,24 @@
 
 .bg-stars_index {
   z-index: -2;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   position: fixed;
-  left: 50%;
-  top: 40%;
+  // left: 50%;
+  // top: 40%;
   // width: 200%;
   // height: 250%;
-  width: 120%;
-  height: 230%;
-  transform: translate(-50%, -50%);
-  animation: rotBg 100s infinite linear;
+  // width: 120%;
+  // height: 230%;
+  // transform: translate(-50%, -50%);
+  // animation: rotBg 5s infinite linear;
   @media (max-width: $tablet) {
     display: none;
   }
   &-mobile {
     height: 100%;
     width: 100%;
-    position: fixed;
     object-fit: cover;
     position: absolute;
     top: 0;
